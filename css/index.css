@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('/fonts/Inconsolata-Regular.ttf') format('truetype');
+}
+
+:root {
+    --logogrey: #363A3B;
+}
+
+* {
+    font-family: 'Inconsolata';
+    margin: 0;
+}
+
+body {
+    background-color: var(--logogrey);
+}
+
+.main {
+    background-color: var(--logogrey);
+    padding: 188px 0px;
+}
+
+.container {
+    margin: 50px auto;
+    width: 850px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
