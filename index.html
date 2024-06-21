@@ -3,14 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="icon" href="/img/favicon.jpg" type="jpg">
 </head>
 
-<body>
+<body onload="load()">
     <header>
         <h1>Password Generator</h1>
     </header>
@@ -18,14 +18,27 @@
         <div class="container">
             <form>
                 <div class="length">
-                    <input type="number" id="ninput">
-                    <input type="range" id="slidebar">
+                    <label for="ninput">Length of the password:</label>
+                    <input type="number" id="ninput" min="1" max="50" value="25">
+                    <input type="range" id="slidebar" min="1" max="50">
                 </div>
                 <div class="requirements">
-                    <input type="checkbox" id="upper" value="upper">UpperCase
-                    <input type="checkbox" id="lower" value="lower"> LowerCase
-                    <input type="checkbox" id="numbers" value="numbers"> Numbers
-                    <input type="checkbox" id="symbols" value="symbols"> Symbols
+                    <div>
+                        <input type="checkbox" id="upper" value="upper">
+                        <label for="upper">UpperCase</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lower" value="lower">
+                        <label for="lower">LowerCase</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="numbers" value="numbers">
+                        <label for="numbers">Numbers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="symbols" value="symbols">
+                        <label for="symbols">Symbols</label>
+                    </div>
                 </div>
                 <button>Generate Password</button>
             </form>

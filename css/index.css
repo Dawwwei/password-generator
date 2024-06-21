@@ -29,6 +29,42 @@ body {
     border-radius: 10px;
 }
 
+.length label {
+    padding: 20px 0 5px 0;
+}
+
+.length label,
+.length input[type="number"] {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+}
+
+.length input[type="number"] {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.length input[type="range"] {
+    display: block;
+    margin: 0 auto;
+    width: 810px;
+}
+
+.requirements {
+    margin: 60px 160px;
+    width: 800px;
+    font-size: 20px;
+}
+
+.requirements div {
+    display: block;
+    padding: 15px;
+}
+
 header {
     background-color: white;
     color: black;
