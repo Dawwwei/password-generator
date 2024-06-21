@@ -57,10 +57,9 @@ function generate() {
 function copy() {
     let resultInputContent = document.getElementById('resultinput').value;
     try {
-    navigator.clipboard.writeText(resultInputContent)
-    alert('Password copied to the clipboard')
+        navigator.clipboard.writeText(resultInputContent)
+        alert('Password copied to the clipboard')
     } catch (error) {
         alert('Failed to copy password to clipboard. Try checking permissions or copy manually')
-        }
-    });
+    }
 }
