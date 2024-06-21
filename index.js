@@ -51,17 +51,16 @@ function generate() {
         let randomIndex = Math.floor(Math.random() * passwordCharacters.length);
         password += passwordCharacters[randomIndex];
     }
-
-    console.log(password)
-
     resultInput.value = password;
 }
 
 function copy() {
     let resultInputContent = document.getElementById('resultinput').value;
-    navigator.clipboard.writeText(resultInputContent).then(() => {
-        alert('Password copied to clipboard')
-    }, () => {
+    try {
+    navigator.clipboard.writeText(resultInputContent)
+    alert('Password copied to the clipboard')
+    } catch (error) {
         alert('Failed to copy password to clipboard. Try checking permissions or copy manually')
+        }
     });
 }
