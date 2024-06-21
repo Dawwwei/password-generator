@@ -16,31 +16,29 @@
     </header>
     <div class="main">
         <div class="container">
-            <form id="form">
-                <div class="length">
-                    <label for="ninput">Length of the password:</label>
-                    <input type="number" id="ninput" min="1" max="50" value="25">
-                    <input type="range" id="slidebar" min="1" max="50">
+            <div class="length">
+                <label for="ninput">Length of the password:</label>
+                <input type="number" id="ninput" min="1" max="50" value="25">
+                <input type="range" id="slidebar" min="1" max="50">
+            </div>
+            <div class="requirements">
+                <div><input type="checkbox" id="upper" value="upper" checked>
+                    <label for="upper">UpperCase</label>
                 </div>
-                <div class="requirements">
-                    <div><input type="checkbox" id="upper" value="upper" checked>
-                        <label for="upper">UpperCase</label>
-                    </div>
-                    <div><input type="checkbox" id="lower" value="lower" checked>
-                        <label for="lower">LowerCase</label>
-                    </div>
-                    <div><input type="checkbox" id="numbers" value="numbers" checked>
-                        <label for="numbers">Numbers</label>
-                    </div>
-                    <div><input type="checkbox" id="symbols" value="symbols" checked>
-                        <label for="symbols">Symbols</label>
-                    </div>
+                <div><input type="checkbox" id="lower" value="lower" checked>
+                    <label for="lower">LowerCase</label>
                 </div>
-                <div class="result">
-                    <input type="text" id="resultinput" disabled>
-                    <button id="but">Copy Password</button>
+                <div><input type="checkbox" id="numbers" value="numbers" checked>
+                    <label for="numbers">Numbers</label>
                 </div>
-            </form>
+                <div><input type="checkbox" id="symbols" value="symbols" checked>
+                    <label for="symbols">Symbols</label>
+                </div>
+            </div>
+            <div class="result">
+                <input type="text" id="resultinput" disabled>
+                <button id="but" onclick="copy()">Copy Password</button>
+            </div>
         </div>
     </div>
 </body>
