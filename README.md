@@ -13,3 +13,5 @@ You can choose from the following options:
 - Uppercase characters
 - Numbers
 - Symbols
+
+#### * Note: Copy password button might not work because the communication between web browser and website is not encrypted *
